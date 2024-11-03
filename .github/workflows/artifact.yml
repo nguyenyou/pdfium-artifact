@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 22
       - run: bun install
-      - run: bun run wasm --workspace=packages/pdfium
+      - run: npm run wasm --workspace=packages/pdfium
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
